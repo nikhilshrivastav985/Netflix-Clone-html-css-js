@@ -1,0 +1,435 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* COLORS */
+    --red-color: #ff0000;
+}
+
+body {
+    min-width: 320px;
+    background-color: black;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover,
+button:hover {
+    cursor: pointer;
+}
+
+/* _________________COMMON-CLASSES/STYLING_________________ */
+
+img {
+    max-width: 100%;
+}
+
+header,
+.card-container {
+    border-bottom: 8px solid #222222;
+}
+
+.display-flex {
+    display: flex;
+}
+
+/* for 'SIGN-IN-BTN' and 'GET-STARTED-BTN' */
+.red-btn {
+    background: var(--red-color);
+}
+
+/* story cards and footer */
+.card-container,
+footer {
+    padding: 70px 45px;
+}
+
+/* __________Navbar__________ */
+.navbar{
+    max-width: 89%;
+    padding-top: 2em;
+    margin: 0 auto 2em;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.netflix-logo {
+    width: 10.5em;
+}
+
+.language-switcher {
+    margin-right: 2em;
+    background: transparent;
+    border: 1px solid white;
+}
+
+.language-switcher,
+.sign-in-btn { 
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 0.4em 1em;
+}
+
+/* __________Header__________ */
+
+header {
+    position: relative;
+}
+
+.header-gradient {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(0deg,rgba(0,0,0,.8) ,transparent 60%,rgba(0,0,0,.8));
+}
+
+.background-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    position: absolute;
+    filter: brightness(0.6);
+    background: center center/cover no-repeat;
+    background-image: url(/images/background.jpg);
+}
+
+/* centers its child horizontally */
+.text-form-aligner {
+    padding: 70px 0;
+    text-align: center;
+} 
+
+.text-form-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 4.5em 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    max-width: 800px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+header h2{
+    margin: 1rem 0;
+    font-weight: 450;
+    font-size: 1.65rem;
+}
+
+/*________FORM________ */
+
+form {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+form h3 {
+    margin: 1rem 0;
+    font-weight: 450;
+    font-size: 1.25rem;
+}
+
+/* Email Input */
+
+.input-container {
+    width: 100%;
+    max-width: 745px;
+}
+
+.input {
+    flex-grow: 1;
+    font-size: 1rem;
+    padding-left: 1em;
+}
+
+/* Get Started Button */
+.input-btn {
+    width: 245px;
+    font-size: 2rem;
+}
+
+.input,
+.input-btn {
+    height: 70px;
+}
+
+/*________________________STORY CARD______________________________*/
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.card-flipped {
+    flex-flow: row-reverse;
+}
+
+/* ____CARD-TEXT____ */
+
+.card-1 .card-text,
+.card-3 .card-text {
+    padding-right: 3em;
+}
+
+.card-2 .card-text,
+.card-4 .card-text{
+    padding-left: 3em;
+} 
+
+.card-text {
+    width: 54%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text > h1 {
+    font-size: 3.125rem;
+}
+
+.card-text > h3 {
+    font-size: 1.625em;
+    font-weight: 400;
+    margin: 0.75em 0 0.25em 0;
+}
+
+/*________CARD-MEDIA_______ */
+.card-media {
+    width: 46%;
+    position: relative;
+}
+
+/*____card-1-media____*/
+
+.tv-image {
+    z-index: -1;
+    width: 100%;
+    position: relative;
+    margin: -7% 0 -4% 0;
+}
+
+.video-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.video-1-box {
+    top: 0%;
+    transform: translate(18%, 24%);
+    max-width: 73%;
+    max-height: 54%;
+}
+
+.video-1 {
+    width: 100%;
+}
+
+
+/*____card-2-media____ */
+.mobile-image {
+    position: relative;
+    margin: -7% 0% -4% -15%;
+    z-index: -1;
+}
+
+.stranger-container {
+    width: 65%;
+    bottom: 8%;
+    left: 35%;
+    min-width: 16em;
+    position: absolute;
+    background: #000;
+    align-items: center;
+    padding: 0.5em 0.75em;
+    border-radius: 0.75em;
+    transform: translateX(-50%);
+    border: 2px solid hsla(0,0%,100%,.25);
+}
+
+.stranger-poster {
+    height: 5em;
+    margin-right: 1em;
+}
+
+.stranger-poster-text {
+    flex-grow: 1;
+}
+
+.stranger-things-text {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.downloading-text {
+    color: #0071eb;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+    
+.download-icon {
+    width: 3em;
+}
+
+/*____card-3-media____ */
+
+.monitor-image {
+    margin-bottom: 2%;
+    z-index: 1;
+}
+
+.video-2-box {
+    top: 0%;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    max-width: 61%;
+    max-height: 45%;
+    transform: translate(31%, 22%);
+}
+
+.video-2 {
+    height: 100%;
+    width: 100%;
+}
+
+/*________________________FAQ SECTION _______________________________*/
+
+
+/* centers (ul,form) horizontally */
+.FAQ-SECTION {
+    text-align: center;
+}
+
+/* HEADING */
+.FAQ-SECTION > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.FAQ-SECTION ul {
+    width: 75%;
+    max-width: 815px ;
+    margin: 3.25em auto;
+}
+
+.FAQ-SECTION li {
+    margin-bottom: 8px ;
+}
+
+.FAQ-SECTION li:hover {
+    background-color: var(--red-color);
+}
+
+.faq-question,
+.faq-answer {
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.625rem;
+    letter-spacing: 1px;
+    background-color: #303030;
+}
+
+.faq-question {
+    margin-bottom: 1px;
+    position: relative;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+}
+
+/* default display of answer */
+.faq-answer {
+    display: none;
+    padding: 1.2em;
+}
+
+.plus-icon {
+    top: 50%;
+    right: 1em;
+    width: 1em;
+    height: 1em;
+    fill: #fff;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+/* default orientation of icon */
+.plus-icon {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* rotating icon after inserting 'show-answer' class in 'li' by JS */
+.show-answer .plus-icon {
+    transform: translateY(-50%);
+}
+
+/* showing answer after inserting 'show-answer' class in 'li' by JS */
+.show-answer .faq-answer {
+    display: block;
+}
+
+
+/*______________FOOTER________________*/
+.footer-info-container {
+    margin: 0 auto;
+    max-width: 900px;
+    flex-direction: column;
+}
+
+.helpline-number {
+    margin-bottom: 2em;
+}
+
+.list-container {
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer li, 
+.country {
+    font-size: 13px;
+}
+
+footer p,
+footer li,
+footer select{
+    color: #737373;
+}
+
+.footer-lang-switcher {
+    font-size: 1rem;
+    color: #999999;
+    padding: 12px 26px;
+    margin-top: 2.5rem;
+    background: transparent;
+    border: 1px solid #333333;
+}
+
+.country {
+    margin-top: 1.5rem;
+}

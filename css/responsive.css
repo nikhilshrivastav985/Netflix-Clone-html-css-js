@@ -1,0 +1,304 @@
+/* for phones */
+@media screen and (max-width: 350px) {
+    .text-form-container {
+        padding: 0;
+    }
+
+    form h3 {
+        max-width: 288px;
+    }
+}
+
+/* for phones */
+@media screen and (min-width: 350px ) and (max-width: 550px) {
+    
+    .text-form-container {
+        padding: 30px 0;
+    }
+}
+
+/* aligning footer 'li' in 2 columns */
+@media screen and (max-width: 500px) {
+
+    .list-container {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+/* aligning footer 'li' in 3 columns */
+@media screen and (min-width: 500px ) and (max-width: 740px) {
+    .list-container {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 1450px) {
+    header h1 {
+        font-size: 3.125rem;
+        max-width: 640px;
+    }
+
+    .netflix-logo {
+        width: 8em;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 950px) {
+
+    /* navbar */
+    
+    .navbar {
+        margin: 0 auto;
+    }
+
+    .netflix-logo {
+        width: 7em;
+    }
+
+    /* form */
+    form h3 {
+        max-width: 450px;
+    }
+
+    .input {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    /* card and FAQ font size */
+    .card-text h1,
+    .FAQ-SECTION h1 {
+        font-size: 2.5rem;
+    }
+
+    .card-text h3,
+    .FAQ-SECTION .faq-question,
+    .FAQ-SECTION .faq-answer {
+        font-size: 1.25rem;
+    }
+    /* --------------------------- */
+
+    .card-text,
+    .card-media {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .card-1 .card-text,
+    .card-2 .card-text,
+    .card-3 .card-text,
+    .card-4 .card-text {
+        padding: 0;
+    }
+
+    .card-media {
+        max-width: 600px;
+    }
+
+    .mobile-image {
+        margin: -5% auto -4% auto;
+    }
+
+    .stranger-poster {
+        height: 4em;
+    }
+
+    .FAQ-SECTION ul {
+        width: 90%;
+    }
+
+    .footer-info-container {
+        max-width: 722px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    form h3 {
+        font-size: 1.125rem;
+    }
+
+    .input {
+        height: 48px;
+    }
+
+    .footer-info-container {
+        max-width: 584px;
+    }
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 950px ) {
+    form h3 {
+        font-size: 1.4375em;
+        margin-top: 0;
+        max-width: 450px;
+    }
+
+    .input {
+        height: 60px;
+    }
+}
+
+/* for tablets and phones */
+@media screen and (max-width: 950px) {
+    .input-container,
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+        form h3 {
+            margin-top: 0;
+        }
+
+    .input-btn {
+        width: 130px;
+        height: 40px;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .stranger-container {
+        left: 50%;
+    }
+
+    .stranger-poster-text {
+        text-align: left;
+    }
+}
+
+/* for phones */
+@media screen and (max-width: 550px) {
+
+    /* navbar */
+    .navbar {
+        margin-bottom: 0;
+    }
+
+    .netflix-logo {
+        width: 6em;
+    }
+
+    .language-switcher ,
+    .sign-in-btn {
+        padding: 4px 8px;
+        font-size: 0.9rem;
+    }
+
+    .language-switcher {
+        margin-right: 1em;
+    }
+
+    header h1 {
+        max-width: 640px;
+        font-size: 1.75rem;
+    }
+
+    header h2 {
+        font-size: 1.125rem;
+    }
+
+    form h3 {
+        max-width: 450px;
+    }
+    
+    .input {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .card-container,
+    .text-form-aligner {
+        padding: 50px 5%;
+    }
+
+    .card-text,
+    .card-media {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-text h1,
+    .FAQ-SECTION h1 {
+        font-size: 1.625rem;
+    }
+
+    .card-text h3,
+    .faq-answer,
+    .faq-question {
+        font-size: 1.125rem;
+    }
+
+    .card-1 .card-text,
+    .card-2 .card-text,
+    .card-3 .card-text,
+    .card-4 .card-text {
+        padding: 0;
+    }
+
+    .mobile-image {
+        margin: -7% auto -4% auto;
+    }
+    
+    .stranger-container {
+        padding: 0.25em 0.65em;
+    }
+
+    .stranger-poster {
+        height: 3em;
+    }
+
+    .stranger-things-text {
+        font-size: 00.875rem;
+    }
+
+    .downloading-text {
+        font-size: 0.75rem;
+    }
+
+    .FAQ-SECTION ul {
+        width: 90%;
+    }
+}
+
+/* for laptops */
+@media screen and (min-width: 950px) and (max-width: 1450px) {
+    
+    .netflix-logo {
+        width: 9em;
+    }
+
+    .input-container {
+        max-width: 662px;
+    }
+
+    .input-btn {
+        width: 212px;
+    }
+
+    .input,
+    .input-btn {
+        height: 60px;
+    }
+
+    .stranger-container{
+        width: 70%;
+        /* transform: translateX(-70%); */
+    }
+
+    .stranger-poster {
+        height: 4.5em;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    header h1 {
+        font-size: 4rem;
+        max-width: 800px;
+    }
+}
